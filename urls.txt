@@ -1,0 +1,32 @@
+#Estatisticas de meios de pagamentos Trimestrais
+url = "https://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/odata/MeiosdePagamentosTrimestralDA(trimestre=@trimestre)?@trimestre='20201'&$top=100000&$format=json&$select=datatrimestre,valorPix,valorTED,valorTEC,valorCheque,valorBoleto,valorDOC,valorCartaoCredito,valorCartaoDebito,valorCartaoPrePago,valorTransIntrabancaria,valorConvenios,valorDebitoDireto,valorSaques,quantidadePix,quantidadeTED,quantidadeTEC,quantidadeCheque,quantidadeBoleto,quantidadeDOC,quantidadeCartaoCredito,quantidadeCartaoDebito,quantidadeCartaoPrePago,quantidadeTransIntrabancaria,quantidadeConvenios,quantidadeDebitoDireto,quantidadeSaques"
+
+#Estatisticas de meios de pagamentos Mensais
+url = "https://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/odata/MeiosdePagamentosMensalDA(AnoMes=@AnoMes)?@AnoMes='202001'&$top=100000&$format=json&$select=AnoMes,quantidadePix,valorPix,quantidadeTED,valorTED,quantidadeTEC,valorTEC,quantidadeCheque,valorCheque,quantidadeBoleto,valorBoleto,quantidadeDOC,valorDOC"
+
+#Estoque e transações de cartões
+url = "https://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/odata/Quantidadeetransacoesdecartoes(trimestre=@trimestre)?@trimestre='20201'&$top=100000&$format=json&$select=trimestre,nomeBandeira,nomeFuncao,produto,qtdCartoesEmitidos,qtdCartoesAtivos,qtdTransacoesNacionais,valorTransacoesNacionais,qtdTransacoesInternacionais,valorTransacoesInternacionais"
+
+#Expectativa de mercado mensais
+url = "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativaMercadoMensais?$top=100000&$format=json&$select=Indicador,Data,DataReferencia,Media,Mediana,DesvioPadrao,Minimo,Maximo,numeroRespondentes,baseCalculo"
+
+#Expectativa de mercado selic
+url = "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoSelic?$top=100000&$format=json&$select=Indicador,Data,Reuniao,Media,Mediana,DesvioPadrao,Minimo,Maximo,numeroRespondentes,baseCalculo"
+
+# expectativa de mercado anual
+url = "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?$top=50000&$skip=20200&$format=json&$select=Indicador,IndicadorDetalhe,Data,DataReferencia,Media,Mediana,DesvioPadrao,Minimo,Maximo,numeroRespondentes,baseCalculo"
+
+#Expectativa de mercado Trimestrais
+url = "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoTrimestrais?$top=100000&$format=json&$select=Indicador,Data,DataReferencia,Media,Mediana,DesvioPadrao,Minimo,Maximo,numeroRespondentes,baseCalculo"
+
+#PMS vendas Brasil
+url ='https://servicodados.ibge.gov.br/api/v3/agregados/8688/periodos/201102-202407/variaveis/11623?localidades=N1[all]&classificacao=11046[56726]|12355[107071,106869,106874,31399,106876,31426]'
+
+#PMS vendas Estados 
+url = "https://servicodados.ibge.gov.br/api/v3/agregados/8695/periodos/201101-202407/variaveis/11623?localidades=N1[all]&classificacao=11046[56726]|12355[56724"  # Substituir pela URL real
+
+#PMS Localidades 
+url = 'https://servicodados.ibge.gov.br/api/v3/agregados/8693/periodos/201101-202407/variaveis/11623?localidades=N3[all]&classificacao=11046[56726]|12355[all]'
+
+#PMS Cargas 
+url = 'https://servicodados.ibge.gov.br/api/v3/agregados/8695/periodos/201101-202407/variaveis/11623?localidades=N1[all]&classificacao=11046[56726]|12355[56724]'
